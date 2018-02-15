@@ -10,9 +10,9 @@ namespace LAB4_Tarquinio.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index() //REDIRECTS ON RUNTIME TO LAB4 VIEW
         {
-            return View();
+            return Redirect("Lab4");
         }
 
         public IActionResult About()
