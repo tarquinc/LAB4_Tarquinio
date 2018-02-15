@@ -32,7 +32,7 @@ namespace LAB4_Tarquinio.Controllers
 
             TimeSpan difference = year.Subtract(date);
 
-            ViewData["DaysLeft"] = "There are " + difference.Days + " days left in " + date.Year;
+            ViewData["DaysLeft"] = "There are " + difference.Days + " days left in " + date.Year + ".";
 
 
             return View(date);

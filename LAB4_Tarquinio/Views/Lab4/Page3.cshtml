@@ -1,12 +1,14 @@
 ﻿@model string[]
 
-<h2>@ViewData["Title"]</h2>
+<h1>@ViewData["Title"]</h1>
 
 <ol>
-@foreach (var item in Model)
-{
+    @foreach (var item in Model)
+    {
         <li>
             @item
         </li>
-}
+    }
 </ol>
+
+<p><a href="/Lab4/Index" class="btn btn-lg btn-info">Back to Home</a></p>

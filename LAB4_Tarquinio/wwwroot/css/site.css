@@ -36,5 +36,26 @@
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-color: azure;
+    color: azure;
+    background-color: midnightblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profile-box {
+    border: 1px dotted black;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.box-header {
+    background-color: lightsteelblue;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.box-content {
+    padding: 20px;
 }

@@ -3,39 +3,35 @@
     ViewData["Title"] = "Page2";
 }
 
-<h2>Page2 - Random Data</h2>
+<h1>Page2 - Some Random Data</h1>
 <p>
-<a href="/Lab4/Page2/1">1</a>
-<a href="/Lab4/Page2/2">2</a>
-<a href="/Lab4/Page2/3">3</a>
-<a href="/Lab4/Page2/4">4</a>
-<a href="/Lab4/Page2/5">5</a>
+<h3>Select the number of profiles to generate:</h3>
+<a href="/Lab4/Page2/1" class="btn btn-info">1</a>
+<a href="/Lab4/Page2/2" class="btn btn-info">2</a>
+<a href="/Lab4/Page2/3" class="btn btn-info">3</a>
+<a href="/Lab4/Page2/4" class="btn btn-info">4</a>
+<a href="/Lab4/Page2/5" class="btn btn-info">5</a>
 </p>
 
-<p><a href="/Lab4/Page3">Go to Page 3</a></p>
+<p><a href="/Lab4/Page3" class="btn btn-lg btn-info">Go to Page 3</a></p>
 
 
 @for (var i = 1; i <= Model; i++)
 {
     <p>
-        <h2>Profile @i:</h2>
-        <tr>
-            <td>
-                <b>Name: </b>@LoremNET.Lorem.Words(2, true, false)
-            </td>
-        </tr>
-        <br />
-        <tr>
-            <td>
-                <b> Email: </b>@LoremNET.Lorem.Email()
-            </td>
-        </tr>
-        <br />
-        <tr>
-            <td>
-                <b>Bio: </b>@LoremNET.Lorem.Paragraph(7, 12, 4, 5)
-            </td>
-        </tr>
+        <div class="profile-box">
+            <div class="box-header"><h2>Profile @i:</h2></div>
+                <div class="box-content">
+                    <div>
+                        <b>Name: </b>@LoremNET.Lorem.Words(2, true, false)
+                    </div>
+                    <div>
+                        <b> Email: </b>@LoremNET.Lorem.Email()
+                    </div>
+                    <div>
+                        <b>Bio: </b>@LoremNET.Lorem.Paragraph(7, 12, 4, 5)
+                    </div>
+                </div>
+        </div>
     </p>
-
 }
