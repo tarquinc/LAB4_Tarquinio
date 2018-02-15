@@ -1,1 +1,26 @@
 body{padding-top:50px;padding-bottom:20px}.body-content{padding-left:15px;padding-right:15px}.carousel-caption p{font-size:20px;line-height:1.4}.carousel-inner .item img[src$=".svg"]{width:100%}#qrCode{margin:15px}@media screen and (max-width:767px){.carousel-caption{display:none}}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+    background-color: midnightblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profile-box {
+    border: 1px dotted black;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.box-header {
+    background-color: lightsteelblue;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.box-content {
+    padding: 20px;
+}
